@@ -27,7 +27,8 @@ nav {
 	opacity: .9;
 	position: fixed;
 	width: 100%;
-	height: 10vh;
+	height: 6vh;
+	min-height: 50px;
 	display: flex;
 }
 
@@ -42,7 +43,14 @@ img {
 }
 
 .project {
-	border: 1px solid black;
+	border: 2px solid black;
+	min-height: 200px;
+}
+
+.project img {
+	width: 50vw;
+	height: auto;
+	max-height: 20vh
 }
 
 #about {
@@ -73,6 +81,10 @@ img {
 		grid-template-columns: repeat(2, auto);
 		grid-gap: 1vh;
 	}
+
+	.project img {
+		width: 40vw;
+	}
 }
 
 @media (min-width: 900px) {
@@ -100,4 +112,11 @@ img {
 	.profile-link {
 		margin: 50px;
 	}
+
+	.project img {
+		width: 20vw;
+		height: auto;
+		max-height: 20vh
+	}
+
 }
