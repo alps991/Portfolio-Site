@@ -28,7 +28,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	height: 6vh;
-	min-height: 50px;
+	min-height: 45px;
 	display: flex;
 }
 
@@ -53,9 +53,13 @@ img {
 	max-height: 20vh
 }
 
+.profile-link {
+	display: block;
+}
+
 #about {
 	padding-top: 30vh;
-	height: 80vh;
+	height: 70vh;
 	background-color: #00FA9A;
 }
 
@@ -66,12 +70,13 @@ img {
 }
 
 #projects {
-	padding: 10vh 0 5vh 0;
+	min-height: 86vh;
+	padding: 7vh 0;
 }
 
 #contact {
-	padding: 10vh;
-	height: 80vh;
+	min-height: 93vh;
+	padding-top: 7vh;
 	background-color: #B0E0E6;
 }
 
@@ -84,6 +89,10 @@ img {
 
 	.project img {
 		width: 40vw;
+	}
+
+	.profile-link {
+		display: inline-block;
 	}
 }
 
@@ -106,6 +115,13 @@ img {
 
 	#projects {
 		padding: 10vh;
+		min-height: 80vh;
+		height: 80vh;
+	}
+
+	#contact {
+		padding: 10vh;
+		min-height: 80vh;
 		height: 80vh;
 	}
 
