@@ -4,8 +4,8 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
+  	font-family: 'Open Sans', sans-serif;
+  	text-align: center;
 }
 
 h1 {
@@ -45,12 +45,12 @@ img {
 .project {
 	border: 2px solid black;
 	min-height: 200px;
+	padding: 2vh 0;
 }
 
 .project img {
-	width: 50vw;
+	width: 60vw;
 	height: auto;
-	max-height: 20vh
 }
 
 .profile-link {
@@ -66,7 +66,6 @@ img {
 #project-container {
 	display: grid;
 	grid-template-columns: repeat(1, auto);
-	grid-gap: 1vh;
 }
 
 #projects {
@@ -84,11 +83,10 @@ img {
 	#project-container {
 		display: grid;
 		grid-template-columns: repeat(2, auto);
-		grid-gap: 1vh;
 	}
 
 	.project img {
-		width: 40vw;
+		width: 30vw;
 	}
 
 	.profile-link {
