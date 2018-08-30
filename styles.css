@@ -42,25 +42,15 @@ img {
 	padding: 1rem;
 }
 
-.project {
-	border: 2px solid black;
-	min-height: 200px;
-	overflow: auto;
-}
-
-.project img {
-	width: 70vw;
-	height: auto;
-}
-
-.profile-link {
-	display: block;
-}
-
 #about {
 	padding-top: 30vh;
 	height: 70vh;
 	background-color: #00FA9A;
+}
+
+#projects {
+	min-height: 86vh;
+	padding: 7vh 0;
 }
 
 #project-container {
@@ -68,9 +58,16 @@ img {
 	grid-template-columns: repeat(1, auto);
 }
 
-#projects {
-	min-height: 86vh;
-	padding: 7vh 0;
+.project {
+	border: 2px solid black;
+	min-height: 200px;
+	overflow: auto;
+	padding: 1.5rem 0;
+}
+
+.project img {
+	width: 70vw;
+	height: auto;
 }
 
 #contact {
@@ -79,11 +76,17 @@ img {
 	background-color: #B0E0E6;
 }
 
-@media (min-width: 600px) {
-	#project-container {
-		display: grid;
-		grid-template-columns: repeat(2, auto);
-	}
+.profile-link {
+	display: block;
+}
+
+@media (max-width: 599px) {
+
+	
+
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
 
 	.project img {
 		width: 35vw;
@@ -92,9 +95,11 @@ img {
 	.profile-link {
 		display: inline-block;
 	}
+
 }
 
 @media (min-width: 900px) {
+
 	nav {
 		justify-content: end;
 	}
@@ -104,17 +109,25 @@ img {
 		padding: 0 80px;
 	}
 
-	#project-container {
-		display: grid;
-		grid-template-columns: repeat(3, auto);
-		grid-template-rows: repeat(2, 40vh);
-		grid-gap: 1vh;
-	}
-
 	#projects {
 		padding: 7vh;
 		min-height: 86vh;
 		height: 86vh;
+	}
+
+	#project-container {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		grid-gap: 2vh;
+		margin: 10vh 0;
+	}
+
+	.project {
+		padding: 3rem 0;
+	}
+
+	.project img {
+		width: 20vw;
 	}
 
 	#contact {
@@ -129,15 +142,6 @@ img {
 
 	.profile-link {
 		margin: 50px;
-	}
-
-	.project {
-		padding: 10px;
-	}
-
-	.project img {
-		width: 15vw;
-		max-width: 300px;
 	}
 
 }
