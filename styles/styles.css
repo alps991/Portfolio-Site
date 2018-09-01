@@ -37,7 +37,9 @@ nav a {
 }
 
 img {
+	display: inline-block;
 	margin: 1rem;
+	padding: 0;
 }
 
 #about {
@@ -77,11 +79,12 @@ img {
 	}
 
 	h2 {
-		margin: 1rem 0;
+		margin: 1rem 0 0.5rem 0;
 	}
 
-	.profile-link {
-		display: block;
+	#profile-images {
+		display: flex;
+		flex-direction: column;
 	}
 	
 }
@@ -108,7 +111,6 @@ img {
 	}
 
 	.profile-link {
-		display: inline-block;
 		margin: 0 1rem;
 	}
 
