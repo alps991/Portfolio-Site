@@ -141,6 +141,7 @@ img {
 	}
 
 	.profile-link {
+		display: inline-block;
 		margin: 50px;
 	}
 
