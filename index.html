@@ -5,8 +5,10 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Alper's Portfolio</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/styles.css">
 	<script src="./scripts/jquery-3.3.1.min.js"></script>
 	<script src="./scripts/animatescroll.min.js"></script>
 </head>
@@ -39,7 +41,7 @@
 				<div class="project">
 					<h3>Responsive Calculator</h3>
 					<a href="http://responsive-calculator.herokuapp.com" target="_blank">
-						<img src="./images/calc.png">
+						<img src="./images/calc.jpg">
 					</a>
 					<p>HTML, CSS, jQuery</p>
 					<a href="https://github.com/alps991/Responsive-Calculator" target="_blank">Source Code</a>
@@ -58,15 +60,17 @@
 
 	<section id="contact">
 		<h2>Contact Me</h2>
-		<a class="profile-link" target="blank" href="mailto:alper.donmez490@gmail.com">
-			<img src="./images/mail.png">
-		</a>
-		<a class="profile-link" target="blank" href="https://github.com/alps991">
-			<img src="./images/github.png">
-		</a>
-		<a class="profile-link" target="blank" href="http://linkedin.com">
-			<img src="./images/linkedin.png">
-		</a>
+		<div id="profile-images">
+			<a class="profile-link" target="blank" href="mailto:alper.donmez490@gmail.com">
+				<img src="./images/mail.png">
+			</a>
+			<a class="profile-link" target="blank" href="https://github.com/alps991">
+				<img src="./images/github.png">
+			</a>
+			<a class="profile-link" target="blank" href="https://www.linkedin.com/in/alper-donmez-b604b493/">
+				<img src="./images/linkedin.png">
+			</a>
+		</div>
 	</section>
 
 	<script src="./scripts/main.js"></script>
