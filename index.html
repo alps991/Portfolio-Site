@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Alper's Portfolio</title>
 	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
 	<link rel="stylesheet" href="styles/styles.css">
 	<script src="./scripts/jquery-3.3.1.min.js"></script>
 	<script src="./scripts/animatescroll.min.js"></script>
@@ -16,43 +17,123 @@
 <body>
 
 	<nav>
+		<a href="#home">Home</a>
 		<a href="#about">About</a>
 		<a href="#projects">Projects</a>
 		<a href="#contact">Contact</a>
 	</nav>
 
-	<section id="about">
+	<section id="home">
 		<h1>Alper Donmez</h1>
 		<p>Web Development Portfolio</p>
 	</section>
 
+	<section id="about">
+		<h2>About Me</h2>
+		<p class="about-description">
+			I am an NYC-based recent graduate of Mechanical Engineering looking to move into the field of Web Development.
+			My primary skills involve ES6 Javascript with React and Redux, along with the web fundamentals of HTML5 and CSS3.
+			I am eager to learn and am more than willing to learn any new languages or technologies required
+			for the job.
+		</p>
+		<h3 class="skills-header">Skills</h3>
+		<table id="skills">
+			<tr>
+				<th>Languages</th>
+				<th>Libraries/Frameworks</th>
+				<th>Technologies</th>
+			</tr>
+			<tr>
+				<td>ES6+ Javascript</td>
+				<td>React</td>
+				<td>Git</td>
+			</tr>
+			<tr>
+				<td>Node.js</td>
+				<td>Redux</td>
+				<td>Webpack</td>
+			</tr>
+			<tr>
+				<td>HTML5</td>
+				<td>Express</td>
+				<td>Heroku</td>
+			</tr>
+			<tr>
+				<td>CSS3</td>
+				<td>jQuery</td>
+				<td>Firebase</td>
+			</tr>
+			<tr>
+				<td>SASS</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Python</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</section>
+
 	<section id="projects">
-		<div class="project-title">
-			<h2>Here are my projects</h2>
-			<div id="project-container">
-				<div class="project">
-					<h3>Standardized Tester</h3>
-					<a href="http://standardized-tester.herokuapp.com" target="_blank">
-						<img src="./images/tester.png">
-					</a>
-					<p>React, Redux, Webpack, SCSS</p>
-					<a href="https://github.com/alps991/standardizedtester" target="_blank">Source Code</a>
+		<h2>Here are my projects</h2>
+		<div id="project-container">
+
+			<div class="project">
+				<h3>Standardized Tester</h3>
+				<img src="./images/tester.png">
+				<div class="caption">
+					<h3 class="project-title">Standardized Tester</h3>
+					<div class="information">
+						<div class="icons">
+							<a href="https://github.com/alps991/standardizedtester" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+							<a href="http://standardized-tester.herokuapp.com" target="_blank">
+								<i class="fa fa-link"></i>
+							</a>
+						</div>
+						<p>React, Redux, Webpack, SCSS</p>
+					</div>
 				</div>
-				<div class="project">
-					<h3>Responsive Calculator</h3>
-					<a href="http://responsive-calculator.herokuapp.com" target="_blank">
-						<img src="./images/calc.jpg">
-					</a>
-					<p>HTML, CSS, jQuery</p>
-					<a href="https://github.com/alps991/Responsive-Calculator" target="_blank">Source Code</a>
+			</div>
+
+			<div class="project">
+				<h3>Responsive Calculator</h3>
+				<img src="./images/calc.jpg">
+				<div class="caption">
+					<h3 class="project-title">Responsive Calculator</h3>
+					<div class="information">
+						<div class="icons">
+							<a href="https://github.com/alps991/Responsive-Calculator" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+							<a href="http://responsive-calculator.herokuapp.com" target="_blank">
+								<i class="fa fa-link"></i>
+							</a>
+						</div>
+						<p>HTML, CSS, jQuery</p>
+					</div>
 				</div>
-				<div class="project">
-					<h3>Minesweeper</h3>
-					<a href="http://minesweeper-alper.herokuapp.com" target="_blank">
-						<img src="./images/minesweeper.png">
-					</a>
-					<p>HTML, CSS, jQuery</p>
-					<a href="https://github.com/alps991/Minesweeper" target="_blank">Source Code</a>
+			</div>
+
+			<div class="project">
+				<h3>Minesweeper</h3>
+				<img src="./images/minesweeper.png">
+				<div class="caption">
+					<h3 class="project-title">Minesweeper</h3>
+					<div class="information">
+						<div class="icons">
+							<a href="https://github.com/alps991/Minesweeper" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+							<a href="http://minesweeper-alper.herokuapp.com" target="_blank">
+								<i class="fa fa-link"></i>
+							</a>
+						</div>
+						<p>HTML, CSS, jQuery</p>
+					</div>
 				</div>
 			</div>
 		</div>

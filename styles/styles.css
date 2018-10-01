@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
-  	font-family: 'Open Sans', sans-serif;
+  	font-family: 'Montserrat', sans-serif;
   	text-align: center;
 }
 
@@ -28,6 +30,7 @@ nav {
 	height: 6vh;
 	min-height: 45px;
 	display: flex;
+	z-index: 2000;
 }
 
 nav a {
@@ -42,7 +45,7 @@ img {
 	padding: 0;
 }
 
-#about {
+#home {
 	padding-top: 30vh;
 	height: 70vh;
 	background-color: #00FA9A;
@@ -55,6 +58,7 @@ img {
 
 .project {
 	border: 2px solid black;
+	display: relative;
 	min-height: 200px;
 	padding: 1.5rem 0;
 	margin: 1rem 0;
@@ -90,6 +94,31 @@ img {
 }
 
 @media (max-width: 899px) {
+
+	#about {
+		padding-top: 8vh;
+		height: 92vh;
+		background-color: #FAFAD2;
+	}
+
+	#skills {
+		margin: 1rem auto;
+	}
+
+	.skills-header {
+		font-size: 2rem;
+		margin: 3rem;
+	}
+	
+	#skills th, td {
+		padding: 0.25rem 2rem;
+	}
+
+	.about-description {
+		text-align: justify;
+		width: 90%;
+		margin: 0 auto;
+	}
 	
 	#project-container {
 		display: flex;
@@ -99,6 +128,25 @@ img {
 
 	.project {
 		width: 90vw;
+	}
+
+	.project-title {
+		display: none; 
+	}
+
+	.icons {
+		min-width: 200px;
+		max-width: 50%;
+		position: relative;
+		margin: 0 auto;
+		font-size: 40px;
+		padding: 0 20px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.icons i {
+		color: black;
 	}
 
 }
@@ -124,7 +172,13 @@ img {
 
 	nav a {
 		flex: 0;
-		padding: 0 80px;
+		padding: 0 50px;
+	}
+
+	#about {
+		padding-top: 20vh;
+		height: 80vh;
+		background-color: #FAFAD2;
 	}
 
 	#projects {
@@ -144,19 +198,98 @@ img {
 		height: 40vh;
 	}
 
-	#contact {
-		padding: 7vh;
-		min-height: 86vh;
-		height: 86vh;
+	.about-description {
+		text-align: justify;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	#skills {
+		margin: 1rem auto;
+	}
+
+	.skills-header {
+		font-size: 2rem;
+		margin: 3rem;
+	}
+	
+	#skills th, td {
+		padding: 0.25rem 2rem;
 	}
 
 	#contact h2 {
-		padding-bottom: 10vh;
+		padding-bottom: 15vh;
 	}
 
 	.profile-link {
 		display: inline-block;
 		margin: 50px;
+	}
+
+	.project {
+		position: relative;
+	}	
+
+	.caption {
+		top: 0;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		color: white;
+		filter: opacity(0%);
+		background: black;
+		z-index: 1000;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		transition: all .5s;
+	}
+
+	.caption h3 {
+		position: relative;
+		top: -100px;
+		max-width: 80%;
+		margin: 0 auto;
+		padding: 10px;
+		font-size: 20px;
+		transition: all .2s;
+	}
+
+	.icons {
+		min-width: 200px;
+		max-width: 50%;
+		position: relative;
+		margin: 15px auto;
+		font-size: 40px;
+		padding: 10px 20px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.icons a {
+		color: white;
+	}
+
+	.information {
+		bottom: -100px;
+		transition: all .2s;
+		position: relative;
+
+	}
+
+	.project:hover > .caption {
+		filter: opacity(90%);
+	}
+
+	.project:hover > .caption h3 {
+		filter: opacity(100%);
+		top: 0;
+	}
+	
+	.project:hover > .caption .information {
+		opacity: 1;
+		bottom: 0;
 	}
 
 }
