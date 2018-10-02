@@ -51,6 +51,11 @@ img {
 	background-color: #00FA9A;
 }
 
+#about {
+	min-height: 85vh;
+	background-color: #FAFAD2;
+}
+
 .about-description {
 	text-align: justify;
 	margin: 0 auto;
@@ -122,7 +127,6 @@ img {
 	#about {
 		padding: 8vh 0;
 		min-height: 92vh;
-		background-color: #FAFAD2;
 	}
 	
 	#project-container {
@@ -203,8 +207,6 @@ img {
 
 	#about {
 		padding-top: 15vh;
-		height: 85vh;
-		background-color: #FAFAD2;
 	}
 
 	#projects {
