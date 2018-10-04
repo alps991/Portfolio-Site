@@ -210,20 +210,19 @@ img {
 	}
 
 	#projects {
-		padding: 7vh;
+		padding: 7vh 15vh;
 		min-height: 86vh;
-		height: 86vh;
 	}
 
 	#project-container {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 2vh;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 10vh;
 	}
 
 	.project img {
-		max-width: 20vw;
-		height: 40vh;
+		max-width: 30vw;
+		max-height: 40vh;
 	}
 
 	.about-description {
