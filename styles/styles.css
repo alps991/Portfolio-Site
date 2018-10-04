@@ -279,7 +279,7 @@ img {
 		transition: all .5s;
 	}
 
-	.caption h3 {
+	.project-title {
 		position: relative;
 		top: -100px;
 		max-width: 80%;
@@ -287,6 +287,10 @@ img {
 		padding: 10px;
 		font-size: 20px;
 		transition: all .2s;
+	}
+
+	.top-project-title {
+		font-size: 1.5rem;
 	}
 
 	.icons {
